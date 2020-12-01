@@ -102,3 +102,35 @@ a {
   color: var(--yellow);
   border-bottom: none;
 }
+
+.crumb__container {
+  position: absolute;
+  top: 2rem;
+  padding: 5px 1rem;
+  border-radius: 5px;
+  left: 2rem;
+  border: 0;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 10000;
+}
+.crumb {
+  text-decoration: none;
+  font-size: 1.3rem;
+  /* color: var(--yellow); */
+  color: #fff;
+  border-bottom: none;
+  margin: 0.25em 0;
+  font-weight: 500;
+}
+
+.crumb::after {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-left: 0.8rem;
+  color: #fff;
+  content: '/';
+}
+
+.crumb:last-child::after {
+  content: '';
+}
