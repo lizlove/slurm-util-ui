@@ -3,25 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Slurm Util</title>
   </head>
 
   <body>
-    <div class="crumb__container">
-      <a href="/" class="crumb">Home</a>
-      <a href="/" class="crumb">Thing</a>
-      <a href="/" class="crumb">Next Thing</a>
-    </div>
-    <div class="hero">
-      <p class="hero__text hero__text--top"><span class="hl">Flatiron Institute</span> computing cluster</p>
-      <h1 class="magic"><a href="/" class="hero__title">Slurm Util</a></h1>
-      <p class="hero__text">
-        Explore <a class="hl" href="/">allocations</a> and <a class="hl" href="/">activity</a> on
-        <a class="hl" href="https://slurm.schedmd.com/documentation.html">Slurm Workload Manager</a>
-      </p>
-      <p class="hero__text hero__text--small">Watch what happens live</p>
+    <div class="layout">
+      <div class="crumb__container">
+        <a href="/" class="crumb">Home</a>
+        <a href="/" class="crumb">Things</a>
+        <a href="/" class="crumb">Frings</a>
+      </div>
+      <div class="hero">
+        <p class="hero__text hero__text--top"><span class="hl">Flatiron Institute</span> computing cluster</p>
+        <h1 class="magic">
+          <a href="/" class="hero__title">Slurm Util</a>
+        </h1>
+        <p class="hero__text">
+          Explore <a class="hl" href="/">allocations</a> and <a class="hl" href="/">activity</a> on
+          <a class="hl" href="https://slurm.schedmd.com/documentation.html">Slurm Workload Manager</a>
+        </p>
+        <p class="hero__text hero__text--small">Watch what happens live</p>
+      </div>
+      <section class="section section--first">
+        <div class="section__inner">
+          <div class="grid">
+            <div class="grid__title">
+              <h2 class="title title--grid">Frequently, Questions are Asked.</h2>
+            </div>
+            <div class="grid__item">
+              <h3>What font / color scheme / editor / terminal is that?</h3>
+              <p>
+                I answer everything over at <a href="https://wesbos.com/uses">wesbos.com/uses</a>. Feel free to
+                <a href="https://twitter.com/wesbos">tweet me</a> any more questions!
+              </p>
+            </div>
+            <div class="grid__item">
+              <h3>What About Browser Support for Grid? What About IE11?! {{insert hipster slight or IE joke Here}}</h3>
+              <p>
+                You need to read Rachel Andrew's article over on
+                <a href="https://www.smashingmagazine.com/2017/11/css-grid-supporting-browsers-without-grid/"
+                  >Smashing Mag</a
+                >. Even if you decide you can't use it today, I'd recommend still learning it as these older browsers
+                will go away just as quick as grid showed up!
+              </p>
+            </div>
+            <div class="grid__item">
+              <h3>What about Flexbox? Something you did can be done in 1 line less than Grid!</h3>
+              <p>
+                There is an entire video on CSS Grid vs Flexbox. In short, they both do their own thing, but there is
+                also a large amount of overlap in functionality. Watch the video!
+              </p>
+            </div>
+            <div class="grid__item">
+              <h3>I have a question, can I email you?</h3>
+              <p>
+                While I'd absolutely love to help everyone out, there are 120,294 people taking this course and I can't
+                handle that amount of email. If you are a member of one of my premium classes, you can jump into the
+                #CSSGrid room in our <a href="https://wesbos.slack.com">Slack channel</a>.
+              </p>
+            </div>
+            <div class="grid__item">
+              <h3>I lost, deleted or never got my welcome email! What do I do?</h3>
+              <p>
+                Log into <a href="/account">your account</a>, or create an account with the same email you used to get
+                the series.
+              </p>
+            </div>
+            <div class="grid__item">
+              <h3>Can I host a meetup / study group? Can I stream these in my classroom? Can I arrange a playing?</h3>
+              <p>
+                Yep yep yep - as long as you do not redistribute the videos you are welcome and encouraged to do this.
+              </p>
+            </div>
+            <div class="grid__item">
+              <h3>Can I re-distribute these and then charge money for them?</h3>
+              <p>I can't believe I have to make this a FAQ. No, you silly goose.</p>
+            </div>
+            <div class="grid__item">
+              <h3>Will these be on YouTube too?</h3>
+              <p>
+                Yep - over the next few weeks I'll be dripping them out on my YouTube channel, which you should
+                <a href="https://www.youtube.com/wesbos">totally subscribe to</a>.
+              </p>
+            </div>
+            <div class="grid__item">
+              <h3>I found a typo or errata</h3>
+              <p>
+                If it's a typo on the site, please shoot me an email <a href="mailto:hey@wesbos.com">here</a>. If it's a
+                correction in the code, you can submit those via GitHub! Please see the above FAQ if you found a better
+                way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--footer">
+        <div class="section__inner">
+          <h3>This is the End</h3>
+          <p>Beautiful friend, the End</p>
+          <a>Link to the simons and the flatiron</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
