@@ -105,12 +105,18 @@
         </div>
       </section>
       <section class="section section--footer">
-        <div class="section__inner">
-          <h3>This is the End</h3>
-          <p>Beautiful friend, the End</p>
-          <a>Link to the simons and the flatiron</a>
+        <div class="section__inner section__inner--footer">
+          <a href="/" class="hero__title hero__title--footer">Slurm Util</a>
+          <p class="hero__text hero__text--small" id="signature"></p>
         </div>
       </footer>
     </div>
   </body>
+  <script>
+    const now = new Date();
+    const year = now.getFullYear();
+    const signature = `Flatiron Institute, ${year}`;
+    const sig = document.querySelector(`#signature`);
+    sig.innerHTML = signature;
+   </script>
 </html>
