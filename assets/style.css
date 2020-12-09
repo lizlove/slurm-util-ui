@@ -126,20 +126,32 @@ p {
 }
 
 .crumb__container {
-    margin: 0 auto;
-    width: 100vw;
-    padding: 0;
-    z-index: 1000;
-    position: absolute;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    z-index: 9997;
 }
 
 .crumb__inner {
-    max-width: 1200px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: 1;
+    background-image: url(./background-pattern.png),
+        linear-gradient(141deg, #3690ff 0%, #8383ff 100%);
+    background-size: 70px, auto;
+}
+
+.crumb__content {
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    max-width: 1200px;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 2;
 }
 
 .crumbs {
@@ -148,6 +160,7 @@ p {
     border-radius: 5px;
     border: 0;
     z-index: 150;
+    float: left;
 }
 
 .crumb {
@@ -168,7 +181,7 @@ p {
     display: inline-block;
     margin-right: 0.5rem;
     margin-left: 0.8rem;
-    color: #fff;
+    color: var(--yellow);
     content: '/';
 }
 
