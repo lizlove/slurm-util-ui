@@ -11,7 +11,7 @@
 html {
     box-sizing: border-box;
     font-size: 10px;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
         sans-serif;
 }
@@ -24,7 +24,7 @@ html {
 
 body {
     background: white;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--off-black);
 }
 
@@ -61,7 +61,6 @@ p {
     background-image: url(./background-pattern.png),
         linear-gradient(141deg, #3690ff 0%, #8383ff 100%);
     background-size: 70px, auto;
-    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0 100%);
     perspective: 500px;
     padding-bottom: 250px;
     padding-top: 100px;
@@ -91,6 +90,10 @@ p {
     text-decoration: none;
 }
 
+.hero__title--header {
+    font-size: 1.5rem;
+}
+
 .hero__title--footer {
     max-width: 100px;
     text-align: center;
@@ -113,7 +116,7 @@ p {
 }
 
 .hero__text--small {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .hero__image {
@@ -199,7 +202,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    padding: 2rem 2rem 1rem;
+    padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.06) 0px -4px 4px;
 }
 
@@ -218,7 +221,7 @@ p {
     align-items: center;
     align-content: center;
     gap: 2rem;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 .5rem .5rem .5rem;
     padding-top: 1rem;
     border-top: 2px transparent solid;
 }
@@ -260,7 +263,10 @@ p {
 }
 
 .section--first {
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    background-image: url(./background-pattern.png),
+    linear-gradient(141deg, #3690ff 0%, #8383ff 100%);
+    background-size: 70px, auto;
 }
 
 .section--footer {
@@ -268,7 +274,6 @@ p {
         linear-gradient(141deg, #3690ff 0%, #8383ff 100%);
     background-size: 70px, auto;
 }
-
 .section__inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -281,7 +286,9 @@ p {
         padding-right: 2rem;
     }
 }
-
+.section__inner--first {
+    padding: .5rem 0;
+}
 .section__inner--footer {
     display: flex;
     justify-content: space-between;
@@ -304,11 +311,30 @@ p {
 }
 
 .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5vw;
+}
+.dashboard__left, .dashboard__center, .dashboard__right {
+    z-index: 2;
+    align-self: center;
+}
+.dashboard__center {
+    padding: 1.5rem;
+}
+.dashboard__title {
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    background: #f9f9f9;
+    padding: 15px 15px 10px 15px;
+}
+.dashboard__right {
     background: #fff;
-    margin-top: -100px;
     z-index: 2;
     position: relative;
     box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.18);
+}
+.dashboard__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -316,9 +342,10 @@ p {
 .dashboard__section {
     display: flex;
     align-items: center;
-    padding: 2.5rem 4rem;
+    padding: 1rem .5rem;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .grid {
@@ -368,4 +395,64 @@ p {
     z-index: 2;
     position: relative;
     box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.18);
+}
+progress::-moz-progress-bar {
+    background: #ffc600;
+}
+progress::-webkit-progress-value {
+    background: #ffc600;
+}
+progress {
+    color: #ffc600;
+    text-align: right;
+}
+progress:after {
+    content: attr(value)'%';
+    font-size: 1rem;
+    color: white;
+}
+progress[value] {
+    appearance: none;
+    border: none;
+    width: 100%;
+    height: 20px;
+    background-color: whiteSmoke;
+    box-shadow: 8px 8px 3px rgb(0 0 0 / 10%);
+    color: black;
+    position: relative;
+    margin: 0 0 1rem;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: whiteSmoke;
+}
+
+progress[value]::-webkit-progress-value {
+    position: relative;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+progress[value]::-moz-progress-bar {
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 8px 8px 3px rgb(0 0 0 / 10%);
+    width: 100%;
+    height:20px;
+}
+.progress-bar span {
+    background-color: #ffc600;
+    display: block;
+    text-indent: -9999px;
+}
+.progress-label {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 rgb(0 0 0 / 10%);
+    margin-top: 0;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1rem;
 }
