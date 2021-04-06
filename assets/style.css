@@ -322,11 +322,12 @@ p {
 .dashboard__center {
     padding: 1.5rem;
 }
-.dashboard__title {
-    text-align: left;
-    border-bottom: 1px solid #eaeaea;
-    background: #f9f9f9;
-    padding: 15px 15px 10px 15px;
+.dashboard__title > p {
+    border-bottom: 2px solid #ffc600;
+    line-height: 2;
+    padding: .5rem;
+    margin: .5rem;
+    font-weight: 600;
 }
 .dashboard__right {
     background: #fff;
@@ -336,16 +337,19 @@ p {
 }
 .dashboard__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .dashboard__section {
     display: flex;
     align-items: center;
-    padding: 1rem .5rem;
+    padding: 0 .5rem;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+.dashboard__section > p {
+    margin: .5rem 0;
 }
 
 .grid {
