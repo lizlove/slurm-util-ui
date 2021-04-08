@@ -262,6 +262,10 @@ p {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.section--gray {
+    min-height: calc(100vh - 335px);
+}
+
 .section--first {
     /* padding-top: 100px; */
     background-image: url(./background-pattern.png),
@@ -275,9 +279,9 @@ p {
     background-size: 70px, auto;
 }
 .section__inner {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 3rem 5vw;
 }
 @media (max-width: 1200px) {
     .section__inner {
@@ -287,7 +291,7 @@ p {
     }
 }
 .section__inner--first {
-    padding: .5rem 0;
+    padding: .5rem 5vw;
 }
 .section__inner--footer {
     display: flex;
@@ -312,8 +316,8 @@ p {
 
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
 }
 .dashboard__left, .dashboard__center, .dashboard__right {
     z-index: 2;
@@ -324,10 +328,11 @@ p {
 }
 .dashboard__title > p {
     border-bottom: 2px solid #ffc600;
-    line-height: 2;
+    line-height: 1.8;
     padding: .5rem;
     margin: .5rem;
     font-weight: 600;
+    font-size: 1.3rem;
 }
 .dashboard__right {
     background: #fff;
@@ -337,7 +342,7 @@ p {
 }
 .dashboard__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:repeat(4, 1fr);
 }
 
 .dashboard__section {
@@ -350,11 +355,17 @@ p {
 }
 .dashboard__section > p {
     margin: .5rem 0;
+    font-size: 1.2rem;
+}
+
+.dashboard__section--rows > p {
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
 
@@ -371,6 +382,8 @@ p {
     background: #fff;
     box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.05);
     margin: 0 auto;
+    overflow: scroll;
+    width: 100%;
 }
 
 .grid__item a {
@@ -460,3 +473,36 @@ progress[value]::-moz-progress-bar {
     color: #fff;
     font-size: 1rem;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+  }
+  th,
+  td {
+    padding: 4px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-gray);
+    border-right: 1px solid var(--border-gray);
+  }
+  td, td > a {
+    font-size: 1.2rem;
+  }
+  th:last-child,
+  td:last-child {
+    border-right: none;
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd) {
+   background: #eee;
+  }
+  th {
+    background: var(--off-black);
+    color: white;
+    cursor: pointer;
+    /* todo: what is this for? */
+    background-repeat: no-repeat;
+    background-position: 3% center;
+    text-align: center;
+    font-weight: 500;
+  }

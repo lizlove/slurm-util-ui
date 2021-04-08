@@ -7,12 +7,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    />
+      />
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Slurm Util</title>
   </head>
-
   <body>
     <div class="layout">
       <nav class="nav">
@@ -30,104 +29,1020 @@
         </ul>
       </nav>
     </div>
-      <!-- <div class="hero">
-        <p class="hero__text hero__text--top"><span class="hl">Flatiron Institute</span> computing cluster</p>
-        <h1 class="magic">
-          <a href="/" class="hero__title">Slurm Util</a>
-        </h1>
-        <p class="hero__text">
-          Explore <a class="hl" href="/">allocations</a> and <a class="hl" href="/">activity</a> on
-          <a class="hl" href="https://slurm.schedmd.com/documentation.html">Slurm Workload Manager</a>
-        </p>
-        <p class="hero__text hero__text--small">Watch what happens live</p>
+    <!-- <div class="hero">
+      <p class="hero__text hero__text--top"><span class="hl">Flatiron Institute</span> computing cluster</p>
+      <h1 class="magic">
+        <a href="/" class="hero__title">Slurm Util</a>
+      </h1>
+      <p class="hero__text">
+        Explore <a class="hl" href="/">allocations</a> and <a class="hl" href="/">activity</a> on
+        <a class="hl" href="https://slurm.schedmd.com/documentation.html">Slurm Workload Manager</a>
+      </p>
+      <p class="hero__text hero__text--small">Watch what happens live</p>
       </div> -->
-      <section class="section section--first">
-        <div class="section__inner section__inner--first">
-            <div class="dashboard">
-                <div class="dashboard__left">
-                    <h1 class="magic">
-                        <a href="/" class="hero__title hero__title--header">Vikram Mulligan</a>
-                    </h1>
-                    <p class="hero__text hero__text--small">vmulligan - cca</p>
-                </div>
-                <div class="dashboard__center">
-                    <label class="progress-label">Home usage</label>
-                    <progress max="100" value="80">
-                        <div class="progress-bar">
-                            <span style="width: 80%;">Progress: 80%</span>
-                        </div>
-                    </progress>
-                    <label class="progress-label">Ceph usage</label>
-                    <progress max="100" value="80">
-                        <div class="progress-bar">
-                            <span style="width: 80%;">Progress: 80%</span>
-                        </div>
-                    </progress>
-                </div>
-                <div class="dashboard__right">
-                    <div class="dashboard__title"><p>Current Usage</p></div>
-                    <div class="dashboard__grid">
-                        <div class="dashboard__section">
-                            <p>9728 CPUs</p>
-                          </div>
-                          <div class="dashboard__section">
-                              <p>76 Nodes</p>
-                          </div>
-                          <div class="dashboard__section">
-                              <p>12 Jobs</hp>
-                          </div>
-                          <div class="dashboard__section">
-                            <p>76000 GB</hp>
-                        </div>
-                    </div>
-                  </div>
+    <section class="section section--first">
+      <div class="section__inner section__inner--first">
+        <div class="dashboard">
+          <div class="dashboard__left">
+            <h1 class="magic">
+              <a href="/" class="hero__title hero__title--header">Dayanne Martins de Castro</a>
+            </h1>
+            <p class="hero__text hero__text--small">vmulligan - cca</p>
+          </div>
+          <div class="dashboard__right">
+            <div class="dashboard__title">
+              <p>YTD Time</p>
             </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__inner">
-          <div class="grid">
-            <div class="grid__title">
-              <h2 class="title title--grid">Frequently, Content is Fake.</h2>
+            <div class="dashboard__grid--rows">
+              <div class="dashboard__section dashboard__section--rows">
+                <p><b>CPU:</b> 1489Y-3-10:48:33 (#2 top user)</p>
+              </div>
+              <div class="dashboard__section dashboard__section--rows">
+                <p><b>Node:</b> 13Y-138-11:23:53 (#3 top user)</p>
+              </div>
+              <div class="dashboard__section dashboard__section--rows">
+                <p><b>MB:</b> 12448829Y-354-17:52:32 (#3 top user)</hp>
+              </div>
+              <div class="dashboard__section dashboard__section--rows">
+                <p><b>GPU:</b> 2-04:33:16</hp>
+              </div>
             </div>
-            <div class="grid__item">
-              <h3>What is Lorem Ipsum?</h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </p>
+          </div>
+          <div class="dashboard__center">
+            <label class="progress-label">Home usage</label>
+            <progress max="100" value="80">
+              <div class="progress-bar">
+                <span style="width: 80%;">Progress: 80%</span>
+              </div>
+            </progress>
+            <label class="progress-label">Ceph usage</label>
+            <progress max="100" value="80">
+              <div class="progress-bar">
+                <span style="width: 80%;">Progress: 80%</span>
+              </div>
+            </progress>
+          </div>
+          <div class="dashboard__right">
+            <div class="dashboard__title">
+              <p>Current Usage</p>
             </div>
-            <div class="grid__item">
-              <h3>Where does it come from?</h3>
-              <p>Contrary to <a>popular belief</a>, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-              </p>
-            </div>
-            <div class="grid__item">
-              <h3>Why do we use it?</h3>
-              <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-              </p>
-            </div>
-            <div class="grid__item">
-              <h3>Where can I get some?</h3>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-              </p>
-            </div>
-            <div class="grid__item">
-              <h3>I have some other question! What do I do?</h3>
-              <p>
-                Email us at <a href="mailto:scicomp@flatironinstitute.org">scicomp</a> or join the <b>scicomp</b> channel on the Simons Foundation Slack.
-              </p>
+            <div class="dashboard__grid">
+              <div class="dashboard__section">
+                <p>9728 CPUs</p>
+              </div>
+              <div class="dashboard__section">
+                <p>76 Nodes</p>
+              </div>
+              <div class="dashboard__section">
+                <p>12 Jobs</hp>
+              </div>
+              <div class="dashboard__section">
+                <p>76000 GB</hp>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section section--footer">
-        <div class="section__inner section__inner--footer">
-          <a href="/" class="hero__title hero__title--footer">Slurm Util</a>
-          <p class="hero__text hero__text--small" id="signature"></p>
+      </div>
+    </section>
+    <section class="section section--gray">
+      <div class="section__inner">
+        <div class="grid">
+          <!-- <div class="grid__title">
+            <h2 class="title title--grid">Frequently, Content is Fake.</h2>
+            </div> -->
+          <div class="grid__item">
+            <h3>17 Running Jobs</h3>
+            <table id="run_job_table" class="">
+              <tbody>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951041">951041</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_noaacomp_batch23">predict_7mer_trainingset_intermediates_n+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5080-5086,5150]</td>
+                  <td data-th="submit_time">3/5/2021, 24:22:30</td>
+                  <td data-th="start_time">4/2/2021, 17:58:37</td>
+                  <td data-th="tres_req_str">cpu=1024,node=8,billing=1024</td>
+                  <td data-th="tres_alloc_str">cpu=1024,mem=8000G,node=8,billing=1024</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951043">951043</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_noaacomp_batch25">predict_7mer_trainingset_intermediates_n+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5137,5196-5201,5272]</td>
+                  <td data-th="submit_time">3/5/2021, 24:22:31</td>
+                  <td data-th="start_time">4/2/2021, 20:43:40</td>
+                  <td data-th="tres_req_str">cpu=1024,node=8,billing=1024</td>
+                  <td data-th="tres_alloc_str">cpu=1024,mem=8000G,node=8,billing=1024</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951106">951106</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch11">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5095-5098]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:23</td>
+                  <td data-th="start_time">4/2/2021, 22:40:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951107">951107</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch12">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5288-5291]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:24</td>
+                  <td data-th="start_time">4/2/2021, 22:40:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951108">951108</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch13">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5292-5295]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:24</td>
+                  <td data-th="start_time">4/2/2021, 22:42:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951109">951109</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch14">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5034,5156-5158]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:24</td>
+                  <td data-th="start_time">4/2/2021, 23:49:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951110">951110</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch15">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5138,5246-5248]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:24</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951111">951111</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch16">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5141,5267-5269]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:24</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951112">951112</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch17">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5037-5038,5044-5045]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:24</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951113">951113</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch18">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5112-5113,5202-5203]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:25</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951114">951114</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch19">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5162,5187,5205-5206]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:25</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951115">951115</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch20">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5214,5242,5253,5263]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:25</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951116">951116</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch21">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5169-5172]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:25</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951117">951117</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch22">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5190-5193]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:25</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951118">951118</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch23">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5030,5049-5051]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:25</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951119">951119</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch24">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5032,5315-5317]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:26</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=951120">951120</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch25">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="nodes">worker[5035-5036,5173-5174]</td>
+                  <td data-th="submit_time">3/5/2021, 04:20:26</td>
+                  <td data-th="start_time">4/2/2021, 23:52:41</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="tres_alloc_str">cpu=512,mem=4000G,node=4,billing=512</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th id="job_id">Job ID</th>
+                  <th id="name">Job Name</th>
+                  <th id="partition">Partition</th>
+                  <th id="nodes">Nodes</th>
+                  <th id="submit_time">Submit Time</th>
+                  <th id="start_time">Start Time</th>
+                  <th id="tres_req_str">Tres Req</th>
+                  <th id="tres_alloc_str">Tres Alloc</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="grid__item">
+            <h3>28 Pending Jobs</h3>
+            <table id="pend_job_table" class="">
+              <tbody>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967853">967853</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch1">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:06:05</td>
+                  <td data-th="tres_req_str">cpu=512,node=4,billing=512</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967854">967854</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch2">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:06:50</td>
+                  <td data-th="tres_req_str">cpu=1024,node=8,billing=1024</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967856">967856</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch3">predict_7mer_trainingset_intermediates_a+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:07:36</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967868">967868</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch1">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:42:58</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967869">967869</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch2">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:43</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967870">967870</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch3">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:43</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967871">967871</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch4">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:43</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967872">967872</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch5">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:43</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967873">967873</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch6">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:43</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967874">967874</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch7">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:44</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967875">967875</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch8">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:44</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967876">967876</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch9">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:44</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967877">967877</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch10">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:44</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967878">967878</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch11">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:44</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967879">967879</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch12">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:44</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967880">967880</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch13">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:44</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967881">967881</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch14">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967882">967882</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch15">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967883">967883</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch16">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967884">967884</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch17">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967885">967885</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch18">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967886">967886</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch19">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967887">967887</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch20">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967888">967888</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch21">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:45</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967889">967889</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch22">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:46</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967890">967890</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch23">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:46</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967891">967891</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch24">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:46</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+                <tr>
+                  <td data-th="job_id"><a href="./jobDetails?jid=967892">967892</a></td>
+                  <td data-th="name"><a href="./jobByName?name=predict_7mer_trainingset_endpoints_aacomp_batch25">predict_7mer_trainingset_endpoints_aacom+</a></td>
+                  <td data-th="partition"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="submit_time">3/25/2021, 23:45:46</td>
+                  <td data-th="tres_req_str">cpu=768,node=6,billing=768</td>
+                  <td data-th="state_reason">QOSMaxCpuPerUserLimit</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th id="job_id">Job ID</th>
+                  <th id="name">Job Name</th>
+                  <th id="partition">Partition</th>
+                  <th id="submit_time">Submit Time</th>
+                  <th id="tres_req_str">Tres Req</th>
+                  <th id="state_reason">Pending Reason</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="grid__item">
+            <h3>Completed Jobs</h3>
+            <table id="part_table" class="">
+              <tbody>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=bnl">bnl</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">40</td>
+                  <td data-th="user_avail_cpus" class="inform">1600</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">40</td>
+                  <td data-th="user_lmt_cpus">1600</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">500</td>
+                  <td data-th="grp_lmt_cpus">16000</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">3</td>
+                  <td data-th="grp_alloc_cpus">120</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">119</td>
+                  <td data-th="total_cpus">4760</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">63</td>
+                  <td data-th="avail_cpus_cnt">2520</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=bnlx">bnlx</a></td>
+                  <td data-th="flag_shared">YES</td>
+                  <td data-th="user_avail_nodes" class="inform">4</td>
+                  <td data-th="user_avail_cpus" class="inform">160</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">4</td>
+                  <td data-th="user_lmt_cpus">160</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">0</td>
+                  <td data-th="grp_alloc_cpus">0</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">119</td>
+                  <td data-th="total_cpus">4760</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">63</td>
+                  <td data-th="avail_cpus_cnt">2520</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">0</td>
+                  <td data-th="user_avail_cpus" class="inform">-8448</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">45</td>
+                  <td data-th="user_lmt_cpus">1280</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">76</td>
+                  <td data-th="user_alloc_cpus">9728</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">500</td>
+                  <td data-th="grp_lmt_cpus">16000</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">154</td>
+                  <td data-th="grp_alloc_cpus">13032</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">751</td>
+                  <td data-th="total_cpus">55332</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">130</td>
+                  <td data-th="avail_cpus_cnt">10324</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=gen">gen</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">5</td>
+                  <td data-th="user_avail_cpus" class="inform">160</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">4</td>
+                  <td data-th="user_lmt_cpus">160</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">3</td>
+                  <td data-th="grp_alloc_cpus">296</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">751</td>
+                  <td data-th="total_cpus">55332</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">130</td>
+                  <td data-th="avail_cpus_cnt">10324</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=genx">genx</a></td>
+                  <td data-th="flag_shared">YES</td>
+                  <td data-th="user_avail_nodes" class="inform">128</td>
+                  <td data-th="user_avail_cpus" class="inform">128</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">128</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">2</td>
+                  <td data-th="grp_alloc_cpus">2</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">751</td>
+                  <td data-th="total_cpus">55332</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">132</td>
+                  <td data-th="avail_cpus_cnt">10371</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=gpu">gpu</a></td>
+                  <td data-th="flag_shared">YES</td>
+                  <td data-th="user_avail_nodes" class="inform">22</td>
+                  <td data-th="user_avail_cpus" class="inform">240</td>
+                  <td data-th="user_avail_gpus" class="inform">24</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">240</td>
+                  <td data-th="user_lmt_gpus">24</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">16</td>
+                  <td data-th="grp_alloc_cpus">149</td>
+                  <td data-th="grp_alloc_gpus">26</td>
+                  <td data-th="total_nodes">56</td>
+                  <td data-th="total_cpus">2236</td>
+                  <td data-th="total_gpus">200</td>
+                  <td data-th="avail_nodes_cnt">22</td>
+                  <td data-th="avail_cpus_cnt">667</td>
+                  <td data-th="avail_gpus_cnt">43</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=mem">mem</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">1</td>
+                  <td data-th="user_avail_cpus" class="inform">96</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">200</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">0</td>
+                  <td data-th="grp_alloc_cpus">0</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">2</td>
+                  <td data-th="total_cpus">288</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">1</td>
+                  <td data-th="avail_cpus_cnt">96</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=preempt">preempt</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">141</td>
+                  <td data-th="user_avail_cpus" class="inform">10764</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">n/a</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">0</td>
+                  <td data-th="grp_alloc_cpus">0</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">763</td>
+                  <td data-th="total_cpus">55812</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">141</td>
+                  <td data-th="avail_cpus_cnt">10764</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th colspan="2"></th>
+                  <th colspan="3">User Avail</th>
+                  <th colspan="3">User Lmt</th>
+                  <th colspan="3">User Alloc</th>
+                  <th colspan="3">Grp Lmt</th>
+                  <th colspan="3">Grp Alloc</th>
+                  <th colspan="3">Part. Total</th>
+                  <th colspan="3">Part. Avail</th>
+                </tr>
+                <tr>
+                  <th id="name">Part.</th>
+                  <th id="flag_shared">Sharable</th>
+                  <th id="user_avail_nodes">Node</th>
+                  <th id="user_avail_cpus">CPU</th>
+                  <th id="user_avail_gpus">GPU</th>
+                  <th id="user_lmt_nodes">Node</th>
+                  <th id="user_lmt_cpus">CPU</th>
+                  <th id="user_lmt_gpus">GPU</th>
+                  <th id="user_alloc_nodes">Node</th>
+                  <th id="user_alloc_cpus">CPU</th>
+                  <th id="user_alloc_gpus">GPU</th>
+                  <th id="grp_lmt_nodes">Node</th>
+                  <th id="grp_lmt_cpus">CPU</th>
+                  <th id="grp_lmt_gpus">GPU</th>
+                  <th id="grp_alloc_nodes">Node</th>
+                  <th id="grp_alloc_cpus">CPU</th>
+                  <th id="grp_alloc_gpus">GPU</th>
+                  <th id="total_nodes">Node</th>
+                  <th id="total_cpus">CPU</th>
+                  <th id="total_gpus">GPU</th>
+                  <th id="avail_nodes_cnt">Node</th>
+                  <th id="avail_cpus_cnt">CPU</th>
+                  <th id="avail_gpus_cnt">GPU</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="grid__item">
+            <h3>1 Finished Job in the Last 3 Days</h3>
+            <table id="part_table" class="">
+              <tbody>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=bnl">bnl</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">40</td>
+                  <td data-th="user_avail_cpus" class="inform">1600</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">40</td>
+                  <td data-th="user_lmt_cpus">1600</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">500</td>
+                  <td data-th="grp_lmt_cpus">16000</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">3</td>
+                  <td data-th="grp_alloc_cpus">120</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">119</td>
+                  <td data-th="total_cpus">4760</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">63</td>
+                  <td data-th="avail_cpus_cnt">2520</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=bnlx">bnlx</a></td>
+                  <td data-th="flag_shared">YES</td>
+                  <td data-th="user_avail_nodes" class="inform">4</td>
+                  <td data-th="user_avail_cpus" class="inform">160</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">4</td>
+                  <td data-th="user_lmt_cpus">160</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">0</td>
+                  <td data-th="grp_alloc_cpus">0</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">119</td>
+                  <td data-th="total_cpus">4760</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">63</td>
+                  <td data-th="avail_cpus_cnt">2520</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=ccb">ccb</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">0</td>
+                  <td data-th="user_avail_cpus" class="inform">-8448</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">45</td>
+                  <td data-th="user_lmt_cpus">1280</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">76</td>
+                  <td data-th="user_alloc_cpus">9728</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">500</td>
+                  <td data-th="grp_lmt_cpus">16000</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">154</td>
+                  <td data-th="grp_alloc_cpus">13032</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">751</td>
+                  <td data-th="total_cpus">55332</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">130</td>
+                  <td data-th="avail_cpus_cnt">10324</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=gen">gen</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">5</td>
+                  <td data-th="user_avail_cpus" class="inform">160</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">4</td>
+                  <td data-th="user_lmt_cpus">160</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">3</td>
+                  <td data-th="grp_alloc_cpus">296</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">751</td>
+                  <td data-th="total_cpus">55332</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">130</td>
+                  <td data-th="avail_cpus_cnt">10324</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=genx">genx</a></td>
+                  <td data-th="flag_shared">YES</td>
+                  <td data-th="user_avail_nodes" class="inform">128</td>
+                  <td data-th="user_avail_cpus" class="inform">128</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">128</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">2</td>
+                  <td data-th="grp_alloc_cpus">2</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">751</td>
+                  <td data-th="total_cpus">55332</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">132</td>
+                  <td data-th="avail_cpus_cnt">10371</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=gpu">gpu</a></td>
+                  <td data-th="flag_shared">YES</td>
+                  <td data-th="user_avail_nodes" class="inform">22</td>
+                  <td data-th="user_avail_cpus" class="inform">240</td>
+                  <td data-th="user_avail_gpus" class="inform">24</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">240</td>
+                  <td data-th="user_lmt_gpus">24</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">16</td>
+                  <td data-th="grp_alloc_cpus">149</td>
+                  <td data-th="grp_alloc_gpus">26</td>
+                  <td data-th="total_nodes">56</td>
+                  <td data-th="total_cpus">2236</td>
+                  <td data-th="total_gpus">200</td>
+                  <td data-th="avail_nodes_cnt">22</td>
+                  <td data-th="avail_cpus_cnt">667</td>
+                  <td data-th="avail_gpus_cnt">43</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=mem">mem</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">1</td>
+                  <td data-th="user_avail_cpus" class="inform">96</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">200</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">0</td>
+                  <td data-th="grp_alloc_cpus">0</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">2</td>
+                  <td data-th="total_cpus">288</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">1</td>
+                  <td data-th="avail_cpus_cnt">96</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+                <tr>
+                  <td data-th="name"><a href="./partitionDetail?partition=preempt">preempt</a></td>
+                  <td data-th="flag_shared">NO</td>
+                  <td data-th="user_avail_nodes" class="inform">141</td>
+                  <td data-th="user_avail_cpus" class="inform">10764</td>
+                  <td data-th="user_avail_gpus" class="inform">0</td>
+                  <td data-th="user_lmt_nodes">n/a</td>
+                  <td data-th="user_lmt_cpus">n/a</td>
+                  <td data-th="user_lmt_gpus">n/a</td>
+                  <td data-th="user_alloc_nodes">0</td>
+                  <td data-th="user_alloc_cpus">0</td>
+                  <td data-th="user_alloc_gpus">0</td>
+                  <td data-th="grp_lmt_nodes">n/a</td>
+                  <td data-th="grp_lmt_cpus">n/a</td>
+                  <td data-th="grp_lmt_gpus">n/a</td>
+                  <td data-th="grp_alloc_nodes">0</td>
+                  <td data-th="grp_alloc_cpus">0</td>
+                  <td data-th="grp_alloc_gpus">0</td>
+                  <td data-th="total_nodes">763</td>
+                  <td data-th="total_cpus">55812</td>
+                  <td data-th="total_gpus">0</td>
+                  <td data-th="avail_nodes_cnt">141</td>
+                  <td data-th="avail_cpus_cnt">10764</td>
+                  <td data-th="avail_gpus_cnt">0</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th colspan="2"></th>
+                  <th colspan="3">User Avail</th>
+                  <th colspan="3">User Lmt</th>
+                  <th colspan="3">User Alloc</th>
+                  <th colspan="3">Grp Lmt</th>
+                  <th colspan="3">Grp Alloc</th>
+                  <th colspan="3">Part. Total</th>
+                  <th colspan="3">Part. Avail</th>
+                </tr>
+                <tr>
+                  <th id="name">Part.</th>
+                  <th id="flag_shared">Sharable</th>
+                  <th id="user_avail_nodes">Node</th>
+                  <th id="user_avail_cpus">CPU</th>
+                  <th id="user_avail_gpus">GPU</th>
+                  <th id="user_lmt_nodes">Node</th>
+                  <th id="user_lmt_cpus">CPU</th>
+                  <th id="user_lmt_gpus">GPU</th>
+                  <th id="user_alloc_nodes">Node</th>
+                  <th id="user_alloc_cpus">CPU</th>
+                  <th id="user_alloc_gpus">GPU</th>
+                  <th id="grp_lmt_nodes">Node</th>
+                  <th id="grp_lmt_cpus">CPU</th>
+                  <th id="grp_lmt_gpus">GPU</th>
+                  <th id="grp_alloc_nodes">Node</th>
+                  <th id="grp_alloc_cpus">CPU</th>
+                  <th id="grp_alloc_gpus">GPU</th>
+                  <th id="total_nodes">Node</th>
+                  <th id="total_cpus">CPU</th>
+                  <th id="total_gpus">GPU</th>
+                  <th id="avail_nodes_cnt">Node</th>
+                  <th id="avail_cpus_cnt">CPU</th>
+                  <th id="avail_gpus_cnt">GPU</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="grid__item">
+            <h3>I have some other question! What do I do?</h3>
+            <p>
+              Email us at <a href="mailto:scicomp@flatironinstitute.org">scicomp</a> or join the <b>scicomp</b> channel on the Simons Foundation Slack.
+            </p>
+          </div>
         </div>
-      </footer>
+      </div>
+    </section>
+    <section class="section section--footer">
+    <div class="section__inner section__inner--footer">
+      <a href="/" class="hero__title hero__title--footer">Slurm Util</a>
+      <p class="hero__text hero__text--small" id="signature"></p>
+    </div>
+    </footer>
     </div>
   </body>
   <script>
@@ -136,5 +1051,5 @@
     const signature = `Flatiron Institute, ${year}`;
     const sig = document.querySelector(`#signature`);
     sig.innerHTML = signature;
-   </script>
+  </script>
 </html>
