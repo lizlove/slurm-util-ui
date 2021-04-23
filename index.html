@@ -29,17 +29,6 @@
         </ul>
       </nav>
     </div>
-    <!-- <div class="hero">
-      <p class="hero__text hero__text--top"><span class="hl">Flatiron Institute</span> computing cluster</p>
-      <h1 class="magic">
-        <a href="/" class="hero__title">Slurm Util</a>
-      </h1>
-      <p class="hero__text">
-        Explore <a class="hl" href="/">allocations</a> and <a class="hl" href="/">activity</a> on
-        <a class="hl" href="https://slurm.schedmd.com/documentation.html">Slurm Workload Manager</a>
-      </p>
-      <p class="hero__text hero__text--small">Watch what happens live</p>
-      </div> -->
     <section class="section section--first">
       <div class="section__inner section__inner--first">
         <div class="dashboard">
@@ -49,33 +38,52 @@
             </h1>
             <p class="hero__text hero__text--small">vmulligan - cca</p>
           </div>
+          <div class="dashboard__center">
+            <div class="dashboard__title dashboard__title--dot">
+              <div class="note-display" data-note="50.9">
+                <div class="circle">
+                  <svg width="84" height="84" class="circle__svg">
+                    <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--path"></circle>
+                    <circle cx="41" cy="41" r="38" class="circle__progress circle__progress--fill"></circle>
+                  </svg>
+
+                  <div class="percent">
+                    <span class="percent__int">0</span>
+                    <span class="percent__dec">0</span>
+                  </div>
+                </div>
+
+                <span class="progress-label ceph-label">Ceph usage</span>
+              </div>
+            </div>
+          </div>
           <div class="dashboard__right">
             <div class="dashboard__title">
-              <p>YTD Time</p>
+              <p>YTD Time in hours</p>
             </div>
-            <div class="dashboard__grid--rows">
-              <div class="dashboard__section dashboard__section--rows">
-                <p><b>CPU:</b> 1489Y-3-10:48:33 (#2 top user)</p>
+            <div class="dashboard__grid">
+              <div class="dashboard__section">
+                <p><b>CPU:</b> <span class="scinotation">3.57e4</span></p>
               </div>
-              <div class="dashboard__section dashboard__section--rows">
-                <p><b>Node:</b> 13Y-138-11:23:53 (#3 top user)</p>
+              <div class="dashboard__section">
+                <p><b>Node:</b> <span class="scinotation">1.14e5</span></p>
               </div>
-              <div class="dashboard__section dashboard__section--rows">
-                <p><b>MB:</b> 12448829Y-354-17:52:32 (#3 top user)</hp>
+              <div class="dashboard__section">
+                <p><b>MB:</b> <span class="scinotation">1.09e11</span></hp>
               </div>
-              <div class="dashboard__section dashboard__section--rows">
-                <p><b>GPU:</b> 2-04:33:16</hp>
+              <div class="dashboard__section">
+                <p><b>GPU:</b> 25</hp>
               </div>
             </div>
           </div>
           <div class="dashboard__center">
-            <label class="progress-label">Home usage</label>
+            <label class="progress-label">Home usage (123GB of 1TB) </label>
             <progress max="100" value="80">
               <div class="progress-bar">
                 <span style="width: 80%;">Progress: 80%</span>
               </div>
             </progress>
-            <label class="progress-label">Ceph usage</label>
+            <label class="progress-label">Home file usage <span class="scinotation">(8e5 of 1e6)</span></label>
             <progress max="100" value="80">
               <div class="progress-bar">
                 <span style="width: 80%;">Progress: 80%</span>
@@ -786,254 +794,31 @@
           </div>
           <div class="grid__item">
             <h3>1 Finished Job in the Last 3 Days</h3>
-            <table id="part_table" class="">
-              <tbody>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=bnl">bnl</a></td>
-                  <td data-th="flag_shared">NO</td>
-                  <td data-th="user_avail_nodes" class="inform">40</td>
-                  <td data-th="user_avail_cpus" class="inform">1600</td>
-                  <td data-th="user_avail_gpus" class="inform">0</td>
-                  <td data-th="user_lmt_nodes">40</td>
-                  <td data-th="user_lmt_cpus">1600</td>
-                  <td data-th="user_lmt_gpus">n/a</td>
-                  <td data-th="user_alloc_nodes">0</td>
-                  <td data-th="user_alloc_cpus">0</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">500</td>
-                  <td data-th="grp_lmt_cpus">16000</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">3</td>
-                  <td data-th="grp_alloc_cpus">120</td>
-                  <td data-th="grp_alloc_gpus">0</td>
-                  <td data-th="total_nodes">119</td>
-                  <td data-th="total_cpus">4760</td>
-                  <td data-th="total_gpus">0</td>
-                  <td data-th="avail_nodes_cnt">63</td>
-                  <td data-th="avail_cpus_cnt">2520</td>
-                  <td data-th="avail_gpus_cnt">0</td>
+            <table id="job_history_table" class="">
+                <tbody><tr><td data-th="JobID"><a href="./jobDetails?jid=951101">951101</a></td><td data-th="JobName"><a href="./jobByName?name=predict_7mer_trainingset_intermediates_aacomp_batch6">predict_7mer_trainingset_intermediates_a+</a></td><td data-th="State">TIMEOUT</td><td data-th="NodeList">worker[5007,5254-5256]</td><td data-th="AllocCPUS">512</td><td data-th="AllocGPUS">0</td><td data-th="Start">2021-03-29T10:09:14</td><td data-th="End">2021-04-05T10:09:36</td><td data-th="Job Wall-clock time">7-00:00:22</td><td data-th="CPU Efficiency">86.83% of 3584-03:07:44 core-walltime</td><td data-th="Memory Efficiency">1.40% of 3.91 TB</td></tr></tbody><thead><tr><th id="JobID">Job ID</th><th id="JobName">Job Name</th><th id="State">State</th><th id="NodeList">Alloc Node</th><th id="AllocCPUS">Alloc CPU</th><th id="AllocGPUS">Alloc GPU</th><th id="Start">Start Time</th>
+                    <th id="End">End Time</th>
+                    <th id="Job Wall-clock time">Wall-clock time</th>
+                    <th id="CPU Efficiency">CPU Efficiency</th>
+                    <th id="Memory Efficiency">Memory Efficiency</th>
                 </tr>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=bnlx">bnlx</a></td>
-                  <td data-th="flag_shared">YES</td>
-                  <td data-th="user_avail_nodes" class="inform">4</td>
-                  <td data-th="user_avail_cpus" class="inform">160</td>
-                  <td data-th="user_avail_gpus" class="inform">0</td>
-                  <td data-th="user_lmt_nodes">4</td>
-                  <td data-th="user_lmt_cpus">160</td>
-                  <td data-th="user_lmt_gpus">n/a</td>
-                  <td data-th="user_alloc_nodes">0</td>
-                  <td data-th="user_alloc_cpus">0</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">n/a</td>
-                  <td data-th="grp_lmt_cpus">n/a</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">0</td>
-                  <td data-th="grp_alloc_cpus">0</td>
-                  <td data-th="grp_alloc_gpus">0</td>
-                  <td data-th="total_nodes">119</td>
-                  <td data-th="total_cpus">4760</td>
-                  <td data-th="total_gpus">0</td>
-                  <td data-th="avail_nodes_cnt">63</td>
-                  <td data-th="avail_cpus_cnt">2520</td>
-                  <td data-th="avail_gpus_cnt">0</td>
-                </tr>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=ccb">ccb</a></td>
-                  <td data-th="flag_shared">NO</td>
-                  <td data-th="user_avail_nodes" class="inform">0</td>
-                  <td data-th="user_avail_cpus" class="inform">-8448</td>
-                  <td data-th="user_avail_gpus" class="inform">0</td>
-                  <td data-th="user_lmt_nodes">45</td>
-                  <td data-th="user_lmt_cpus">1280</td>
-                  <td data-th="user_lmt_gpus">n/a</td>
-                  <td data-th="user_alloc_nodes">76</td>
-                  <td data-th="user_alloc_cpus">9728</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">500</td>
-                  <td data-th="grp_lmt_cpus">16000</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">154</td>
-                  <td data-th="grp_alloc_cpus">13032</td>
-                  <td data-th="grp_alloc_gpus">0</td>
-                  <td data-th="total_nodes">751</td>
-                  <td data-th="total_cpus">55332</td>
-                  <td data-th="total_gpus">0</td>
-                  <td data-th="avail_nodes_cnt">130</td>
-                  <td data-th="avail_cpus_cnt">10324</td>
-                  <td data-th="avail_gpus_cnt">0</td>
-                </tr>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=gen">gen</a></td>
-                  <td data-th="flag_shared">NO</td>
-                  <td data-th="user_avail_nodes" class="inform">5</td>
-                  <td data-th="user_avail_cpus" class="inform">160</td>
-                  <td data-th="user_avail_gpus" class="inform">0</td>
-                  <td data-th="user_lmt_nodes">4</td>
-                  <td data-th="user_lmt_cpus">160</td>
-                  <td data-th="user_lmt_gpus">n/a</td>
-                  <td data-th="user_alloc_nodes">0</td>
-                  <td data-th="user_alloc_cpus">0</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">n/a</td>
-                  <td data-th="grp_lmt_cpus">n/a</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">3</td>
-                  <td data-th="grp_alloc_cpus">296</td>
-                  <td data-th="grp_alloc_gpus">0</td>
-                  <td data-th="total_nodes">751</td>
-                  <td data-th="total_cpus">55332</td>
-                  <td data-th="total_gpus">0</td>
-                  <td data-th="avail_nodes_cnt">130</td>
-                  <td data-th="avail_cpus_cnt">10324</td>
-                  <td data-th="avail_gpus_cnt">0</td>
-                </tr>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=genx">genx</a></td>
-                  <td data-th="flag_shared">YES</td>
-                  <td data-th="user_avail_nodes" class="inform">128</td>
-                  <td data-th="user_avail_cpus" class="inform">128</td>
-                  <td data-th="user_avail_gpus" class="inform">0</td>
-                  <td data-th="user_lmt_nodes">n/a</td>
-                  <td data-th="user_lmt_cpus">128</td>
-                  <td data-th="user_lmt_gpus">n/a</td>
-                  <td data-th="user_alloc_nodes">0</td>
-                  <td data-th="user_alloc_cpus">0</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">n/a</td>
-                  <td data-th="grp_lmt_cpus">n/a</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">2</td>
-                  <td data-th="grp_alloc_cpus">2</td>
-                  <td data-th="grp_alloc_gpus">0</td>
-                  <td data-th="total_nodes">751</td>
-                  <td data-th="total_cpus">55332</td>
-                  <td data-th="total_gpus">0</td>
-                  <td data-th="avail_nodes_cnt">132</td>
-                  <td data-th="avail_cpus_cnt">10371</td>
-                  <td data-th="avail_gpus_cnt">0</td>
-                </tr>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=gpu">gpu</a></td>
-                  <td data-th="flag_shared">YES</td>
-                  <td data-th="user_avail_nodes" class="inform">22</td>
-                  <td data-th="user_avail_cpus" class="inform">240</td>
-                  <td data-th="user_avail_gpus" class="inform">24</td>
-                  <td data-th="user_lmt_nodes">n/a</td>
-                  <td data-th="user_lmt_cpus">240</td>
-                  <td data-th="user_lmt_gpus">24</td>
-                  <td data-th="user_alloc_nodes">0</td>
-                  <td data-th="user_alloc_cpus">0</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">n/a</td>
-                  <td data-th="grp_lmt_cpus">n/a</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">16</td>
-                  <td data-th="grp_alloc_cpus">149</td>
-                  <td data-th="grp_alloc_gpus">26</td>
-                  <td data-th="total_nodes">56</td>
-                  <td data-th="total_cpus">2236</td>
-                  <td data-th="total_gpus">200</td>
-                  <td data-th="avail_nodes_cnt">22</td>
-                  <td data-th="avail_cpus_cnt">667</td>
-                  <td data-th="avail_gpus_cnt">43</td>
-                </tr>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=mem">mem</a></td>
-                  <td data-th="flag_shared">NO</td>
-                  <td data-th="user_avail_nodes" class="inform">1</td>
-                  <td data-th="user_avail_cpus" class="inform">96</td>
-                  <td data-th="user_avail_gpus" class="inform">0</td>
-                  <td data-th="user_lmt_nodes">n/a</td>
-                  <td data-th="user_lmt_cpus">200</td>
-                  <td data-th="user_lmt_gpus">n/a</td>
-                  <td data-th="user_alloc_nodes">0</td>
-                  <td data-th="user_alloc_cpus">0</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">n/a</td>
-                  <td data-th="grp_lmt_cpus">n/a</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">0</td>
-                  <td data-th="grp_alloc_cpus">0</td>
-                  <td data-th="grp_alloc_gpus">0</td>
-                  <td data-th="total_nodes">2</td>
-                  <td data-th="total_cpus">288</td>
-                  <td data-th="total_gpus">0</td>
-                  <td data-th="avail_nodes_cnt">1</td>
-                  <td data-th="avail_cpus_cnt">96</td>
-                  <td data-th="avail_gpus_cnt">0</td>
-                </tr>
-                <tr>
-                  <td data-th="name"><a href="./partitionDetail?partition=preempt">preempt</a></td>
-                  <td data-th="flag_shared">NO</td>
-                  <td data-th="user_avail_nodes" class="inform">141</td>
-                  <td data-th="user_avail_cpus" class="inform">10764</td>
-                  <td data-th="user_avail_gpus" class="inform">0</td>
-                  <td data-th="user_lmt_nodes">n/a</td>
-                  <td data-th="user_lmt_cpus">n/a</td>
-                  <td data-th="user_lmt_gpus">n/a</td>
-                  <td data-th="user_alloc_nodes">0</td>
-                  <td data-th="user_alloc_cpus">0</td>
-                  <td data-th="user_alloc_gpus">0</td>
-                  <td data-th="grp_lmt_nodes">n/a</td>
-                  <td data-th="grp_lmt_cpus">n/a</td>
-                  <td data-th="grp_lmt_gpus">n/a</td>
-                  <td data-th="grp_alloc_nodes">0</td>
-                  <td data-th="grp_alloc_cpus">0</td>
-                  <td data-th="grp_alloc_gpus">0</td>
-                  <td data-th="total_nodes">763</td>
-                  <td data-th="total_cpus">55812</td>
-                  <td data-th="total_gpus">0</td>
-                  <td data-th="avail_nodes_cnt">141</td>
-                  <td data-th="avail_cpus_cnt">10764</td>
-                  <td data-th="avail_gpus_cnt">0</td>
-                </tr>
-              </tbody>
-              <thead>
-                <tr>
-                  <th colspan="2"></th>
-                  <th colspan="3">User Avail</th>
-                  <th colspan="3">User Lmt</th>
-                  <th colspan="3">User Alloc</th>
-                  <th colspan="3">Grp Lmt</th>
-                  <th colspan="3">Grp Alloc</th>
-                  <th colspan="3">Part. Total</th>
-                  <th colspan="3">Part. Avail</th>
-                </tr>
-                <tr>
-                  <th id="name">Part.</th>
-                  <th id="flag_shared">Sharable</th>
-                  <th id="user_avail_nodes">Node</th>
-                  <th id="user_avail_cpus">CPU</th>
-                  <th id="user_avail_gpus">GPU</th>
-                  <th id="user_lmt_nodes">Node</th>
-                  <th id="user_lmt_cpus">CPU</th>
-                  <th id="user_lmt_gpus">GPU</th>
-                  <th id="user_alloc_nodes">Node</th>
-                  <th id="user_alloc_cpus">CPU</th>
-                  <th id="user_alloc_gpus">GPU</th>
-                  <th id="grp_lmt_nodes">Node</th>
-                  <th id="grp_lmt_cpus">CPU</th>
-                  <th id="grp_lmt_gpus">GPU</th>
-                  <th id="grp_alloc_nodes">Node</th>
-                  <th id="grp_alloc_cpus">CPU</th>
-                  <th id="grp_alloc_gpus">GPU</th>
-                  <th id="total_nodes">Node</th>
-                  <th id="total_cpus">CPU</th>
-                  <th id="total_gpus">GPU</th>
-                  <th id="avail_nodes_cnt">Node</th>
-                  <th id="avail_cpus_cnt">CPU</th>
-                  <th id="avail_gpus_cnt">GPU</th>
-                </tr>
-              </thead>
+                </thead>
             </table>
           </div>
           <div class="grid__item">
             <h3>I have some other question! What do I do?</h3>
+            <p>Visit the <a href="mailto:scicomp@flatironinstitute.org">wiki</a> for information on scientific computing resources at Flatiron.</p>
             <p>
-              Email us at <a href="mailto:scicomp@flatironinstitute.org">scicomp</a> or join the <b>scicomp</b> channel on the Simons Foundation Slack.
+              Still need help? Email us at <a href="mailto:scicomp@flatironinstitute.org">scicomp</a> or join the <b>scicomp</b> channel on the Simons Foundation Slack.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section seciton--gray">
+      <div class="section__inner">
+        <div class="grid__item">
+          <h3 class="grid">Estimated Usage Efficiency <select class="grid__item--select"><option>3 days</option><option>7 days</option><option>30 days</option><option>90 days</option></select></h3>
+          <canvas id="myChart" width="1200" height="400"></canvas>
         </div>
       </div>
     </section>
@@ -1045,11 +830,88 @@
     </footer>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
   <script>
     const now = new Date();
     const year = now.getFullYear();
     const signature = `Flatiron Institute, ${year}`;
     const sig = document.querySelector(`#signature`);
     sig.innerHTML = signature;
+
+// Chart js
+var ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['1 Apr 21', '2 Apr 21', '3 Apr 21', '4 Apr 21', '5 Apr 21', '6 Apr 21', '7 Apr 21'],
+        datasets: [{
+            label: 'CPU efficiency over time',
+            data: [12, 19, 3, 5, 2, 3, 7],
+            fill: false,
+            borderColor: 'rgb(131, 131, 255)',
+            tension: 0.1
+        },
+        {
+          label: 'Suggested threshold',
+          data: [10, 10, 10, 10, 10, 10, 10],
+          fill: false,
+          borderColor: 'rgb(128, 128, 128)',
+          borderDash: [5, 5],
+          interaction: {
+            intersect: false
+          }
+        }
+      ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+//Ceph  Swirl
+    const displays = document.querySelectorAll('.note-display');
+const transitionDuration = 900;
+
+displays.forEach(display => {
+  let note = parseFloat(display.dataset.note);
+  let [int, dec] = display.dataset.note.split('.');
+  [int, dec] = [Number(int), Number(dec)];
+
+  // strokeTransition(display, note);
+  // TODO: ADD STROKE VALUES FROM http://jsfiddle.net/rE6Rk/1/
+
+  increaseNumber(display, int, 'int');
+  increaseNumber(display, dec, 'dec');
+});
+
+function strokeTransition(display, note) {
+  let progress = display.querySelector('.circle__progress--fill');
+  let radius = progress.r.baseVal.value;
+  let circumference = 2 * Math.PI * radius;
+  let offset = circumference * (10 - note) / 10;
+
+  progress.style.setProperty('--initialStroke', circumference);
+  progress.style.setProperty('--transitionDuration', `${transitionDuration}ms`);
+
+  setTimeout(() => progress.style.strokeDashoffset = offset, 100);
+}
+
+function increaseNumber(display, number, className) {
+  let element = display.querySelector(`.percent__${className}`),
+      decPoint = className === 'int' ? '.' : '',
+      interval = transitionDuration / number,
+      counter = 0;
+
+  let increaseInterval = setInterval(() => {
+    if (counter === number) { window.clearInterval(increaseInterval); }
+
+    element.textContent = counter + decPoint;
+    counter++;
+  }, interval);
+}
   </script>
 </html>
